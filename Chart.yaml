@@ -1,0 +1,16 @@
+apiVersion: v2
+name: argocd-vcluster
+description: A Helm chart for creating a vcluster and an argocd cluster-secret to configure the vcluster in the local cluster. 
+
+type: application
+
+# The version of the chart
+version: 0.1.0
+
+# Version of the vcluster chart.
+appVersion: "0.13.0"
+
+dependencies:
+- name: vcluster
+  version: "0.13.0"
+  repository: "https://charts.loft.sh"
